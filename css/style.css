@@ -13,10 +13,57 @@ body{
 }
 
 .header{
-    height: 90vh;
-    background: url('../images/header.jpg');
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../images/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+    border: 2px solid white;
+    padding: 1rem;
+}
+.header .logo,
+.header .navbar a{
+    color: white;
+}
+
+.header .navbar .logo{
+    float: left;
+}
+
+.header .navbar .nav-item{
+    float: right;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header .navbar .nav-item{
+    display: inline-block;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+ul li{
+    list-style: none;
+}
+a{
+        text-decoration: none;
+        font-size: 1.6rem;
+}
+p,li{
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+}
+h1,h2,h3{
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    font-size: 500;
 
 }
