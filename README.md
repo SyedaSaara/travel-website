@@ -5,3 +5,5 @@
 HTML5
 <br>
 CSS3
+<br>
+Media queries
