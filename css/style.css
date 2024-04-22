@@ -27,26 +27,27 @@ html{
 .navbar{
    
     padding: 1rem;
+     
 }
 .header .logo,
 .header .navbar a{
     color: white;
 }
 
-.header .navbar .logo{
+ .navbar .logo{
     float: left;
     font-size: 3.5rem;
 }
 
-.header .navbar .nav-item{
+.navbar .nav-item{
     float: right;
 }
 .navbar::after{
     content: '';
     display: block;
-    clear: both;
-}
-.header .navbar .nav-item{
+    clear: both}
+    
+    .navbar .nav-item{
     display: inline-block;
     padding: 0.5rem;
     text-transform: uppercase;
@@ -70,6 +71,10 @@ h1,h2,h3{
 
 }
 
+.navbar .logo{
+    color: white;
+}
+
 .navbar a:link,
 .navbar a:visited{
     color: #f4f4f4;
@@ -84,11 +89,13 @@ h1,h2,h3{
 
 
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     width: 90%;
     margin: 0 auto;
 }
-
+.bg-dark{
+background-color: #263238;
+}
 .lg-heading{
     font-size: 3.5rem;
 }
@@ -182,4 +189,71 @@ width: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ########## Feature Secton ##### */
+
+.features{
+    padding: 10rem 0;
+
+}
+.box-wrapper{
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521) ;
+}
+.box{
+    width:33.3333333%;
+    float: left;
+  
+    padding: 2rem;
+    text-align: center;
+}
+.box1, .box3{
+    background-color: #263238;
+    color: #fff;
+    
+}
+.box2{
+
+   background: #e4181e;
+    color: #fff;
+    
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*  F o o t e r   */
+
+.footer{
+    padding: 2rem;
+    text-align: center;
+    background: #263238;
+    color: white;
+
+}
+.social-media-links i{
+    padding: 2rem;
+}
+
+
+
+/*  #### ABOUT PAGE STLING  */
+
+.about{
+    padding: 5rem  0;
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
 }
