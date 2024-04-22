@@ -257,3 +257,307 @@ width: 50%;
     border: 3px solid #e63946;
     width: 100%;
 }
+
+/*  ABout Wrapper */
+.about-wrapper{
+    
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.about-wrapper li{
+    list-style: none;
+}
+
+/*** Count Styling ****/
+
+.count-item{
+    
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-item span{
+   font-size: 3rem;
+   font-weight: 700;
+   color: #e63946;
+
+}
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem
+}
+/* #### banner styling #### */
+.cta-banner{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #f4f4f4;
+    box-shadow: 5px 5px 10px #00000057 ;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5em;
+    color: #f4f4f4;
+}
+.cta-line{
+font-weight: 700;
+font-size: 2rem;
+margin-top:1.5rem ;
+}
+.cta-banner-left{
+    width: 60%;
+    float: left;
+}
+.cta-banner-right{
+  width: 40%;
+  float: right;
+  text-align: right;
+}
+.cta-banner::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+/* #### contact page styling ### */
+.contact-form{
+    padding: 5rem 0;
+   background: #f7f7f7;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+
+}
+.form-wrapper .company-address{
+    height: 760px;
+    padding: 1rem;
+    width: 49%;
+    float: left;
+    background: #fff;
+}
+.form-wrapper .form{
+    
+    width: 49%;
+    float: right;
+    background: #fff;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+/* ##### form styling ### */
+.form-wrapper .form{
+    font-size: 1.6rem;
+    background: #fff;
+    height: 760px;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #ee4758;
+    width: 100%;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '';
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 220px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* ########## media queries #### */
+@media( max-width: 500px ){
+    html{
+        /*font-size: 8px;*/
+        font-size: 50%;
+    
+}
+.navbar .nav-items, .navbar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.header-content .main-heading{
+    display: none;
+}
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box,
+.row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.feature .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+}
+.feature .box2,
+.feature .box3{
+    margin-top: 7rem;
+}
+.box-wrapper{
+    box-shadow: none;
+}
+.cta-banner-left,
+.cta-banner-right{
+    float:none;
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.form-wrapper .form{
+    float: none;
+    width: 100;
+    height: auto;
+}
+}
+@media(min-width: 501px) and (max-width:768px){
+    html{
+        font-size: 8px;
+    }
+p{
+    font-size: 1.8rem;
+}
+.navbar .nav-items, .navbar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.header-content .main-heading{
+    display: none;
+}
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box,
+.row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.feature .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+}
+.feature .box2,
+.feature .box3{
+    margin-top: 7rem;
+}
+.box-wrapper{
+    box-shadow: none;
+}
+.cta-banner-left,
+.cta-banner-right{
+    float:none;
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.form-wrapper .form{
+    float: none;
+    width: 100;
+    height: auto;
+}
+}
+@media(min-width: 768px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
